@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Coffee Website Presentation </title>
+        <!--Linking Font Awesome for Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <!--Linking Swiper CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!--Linking custom CSS-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- ===================== HEADER / NAVBAR ===================== -->
+        <header>
+            <nav class="navbar section-content">
+                <a href="#" class="nav-logo">
+                    <h2 class="logo-text">Brew 'n Bite</h2>
+                </a>
+                <ul class="nav-menu">
+                    <button id="menu-close-button" class="fas fa-times"></button>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <button class="cart-icon-btn" id="cart-open-btn" title="View Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-badge" id="cart-badge">0</span>
+                    </button>
+                    <button id="menu-open-button" class="fas fa-bars"></button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- ===================== HERO SECTION ===================== -->
+            <section class="hero-section">
+                <div class="section-content">
+                    <div class="hero-details">
+                        <h2 class="title">Best Brew Coffee</h2>
+                        <h3 class="subtitle">Perfect Coffee & Snacks for Every Craving</h3>
+                        <p class="description">Enjoy your favorite brews and bites made with love and quality ingredients.
+                            From iced coffee to quick munchies, we've got what you need delivered fast and fresh.</p>
+                        <div class="buttons">
+                            <a href="#menu" class="button order-now">Order Now</a>
+                            <a href="#contact" class="button contact-us">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <img src="coffee-hero-section.png" alt="Hero" class="hero-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== ABOUT SECTION ===================== -->
+            <section class="about-section" id="about">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                        <img src="coffee-image.jpg" alt="About" class="coffee-image">
+                    </div>
+                    <div class="about-details">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="text">We make it easy to get your favorite coffee and snacks from local shops fast and hassle-free.
+                            Whether you're at home, work, or on the go, just order through us and we'll handle the rest.
+                            Quality bites and brews, delivered fresh and fast.</p>
+                        <div class="social-link-list">
+                            <a href="https://www.facebook.com/profile.php?id=61578113486931" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/brew_n__bite/?igsh=MWxhbGo2c293bW1rbg%3D%3D#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@brew.n.bites0?_t=ZS-8yK0lAwjNzx&_r=1" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== MENU SECTION ===================== -->
+            <section class="menu-section" id="menu">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="section-content">
+                    <ul class="menu-list">
+
+                        <li class="menu-item">
+                            <img src="image-1.jpg" alt="Iced Chocolatte" class="menu-image">
+                            <h3 class="name">Iced Chocolatte</h3>
+                            <p class="text">Rich, creamy, and irresistible — our chocolate is the perfect sweet treat to satisfy your cravings anytime.</p>
+                            <p class="price">&#8369;89</p>
+                            <button class="add-to-cart-btn" data-name="Iced Chocolatte" data-price="89" data-img="image-1.jpg">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </li>
+
+                        <li class="menu-item">
+                            <img src="image-2.jpg" alt="Iced Matcha" class="menu-image">
+                            <h3 class="name">Iced Matcha</h3>
+                            <p class="text">Smooth and refreshing, our Matcha Latte blends creamy milk with premium green tea for a calming, energizing drink.</p>
+                            <p class="price">&#8369;95</p>
+                            <button class="add-to-cart-btn" data-name="Iced Matcha" data-price="95" data-img="image-2.jpg">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </li>
+
+                        <li class="menu-item">
+                            <img src="image-3.jpg" alt="Iced Caramel Cream" class="menu-image">
+                            <h3 class="name">Iced Caramel Cream</h3>
+                            <p class="text">Sweet and velvety, our Caramel Cream combines rich caramel flavor with silky cream for the perfect indulgent sip.</p>
+                            <p class="price">&#8369;99</p>
+                            <button class="add-to-cart-btn" data-name="Iced Caramel Cream" data-price="99" data-img="image-3.jpg">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </li>
+
+                        <li class="menu-item">
+                            <img src="image-4.jpg" alt="Iced Latte" class="menu-image">
+                            <h3 class="name">Iced Latte</h3>
+                            <p class="text">Smooth and comforting, our Latte mixes rich espresso with creamy steamed milk for a perfectly balanced cup.</p>
+                            <p class="price">&#8369;85</p>
+                            <button class="add-to-cart-btn" data-name="Iced Latte" data-price="85" data-img="image-4.jpg">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </li>
+
+                        <li class="menu-item">
+                            <img src="image-5.jpg" alt="Caramel Macchiato" class="menu-image">
+                            <h3 class="name">Caramel Macchiato</h3>
+                            <p class="text">Bold espresso layered with creamy milk and topped with sweet caramel drizzle — the perfect mix of rich and smooth.</p>
+                            <p class="price">&#8369;105</p>
+                            <button class="add-to-cart-btn" data-name="Caramel Macchiato" data-price="105" data-img="image-5.jpg">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </li>
+
+                        <li class="menu-item">
+                            <img src="image-6.jpg" alt="Iced Honey Coffee" class="menu-image">
+                            <h3 class="name">Iced Honey Coffee</h3>
+                            <p class="text">Cool and refreshing, our Iced Honey Coffee blends bold coffee with natural honey sweetness for a smooth, energizing drink.</p>
+                            <p class="price">&#8369;92</p>
+                            <button class="add-to-cart-btn" data-name="Iced Honey Coffee" data-price="92" data-img="image-6.jpg">
+                                <i class="fas fa-cart-plus"></i> Add to Cart
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ===================== TESTIMONIALS SECTION ===================== -->
+            <section class="testimonials-section" id="testimonials">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonials swiper-slide">
+                                    <img src="user-1.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Aporbo, Adrian</h3>
+                                    <i class="feedback">The Iced Honey Coffee was so refreshing,
+                                        the honey made it perfectly sweet — definitely a must-try!</i>
+                                </li>
+                                <li class="testimonials swiper-slide">
+                                    <img src="user-2.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Desear, Kent Merryl B.</h3>
+                                    <i class="feedback">The Chocolate was smooth and delicious,
+                                        just the right sweetness to enjoy anytime!</i>
+                                </li>
+                                <li class="testimonials swiper-slide">
+                                    <img src="user-3.jpg" alt="User" class="user-image">
+                                    <h3 class="name">Babo, Christan Joven</h3>
+                                    <i class="feedback">The Matcha Latte was creamy and refreshing,
+                                        with just the right balance of green tea flavor.</i>
+                                </li>
+                            </ul>
+                            <div class="swiper-pagination"></div>
+                            <div class="swipe-slide-button swiper-button-prev"></div>
+                            <div class="swipe-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== GALLERY SECTION ===================== -->
+            <section class="gallery-section" id="gallery">
+                <h2 class="section-title">Gallery</h2>
+                <div class="section-content">
+                    <ul class="gallery-list">
+                        <li class="gallery-item"><img src="gallery-1.jpg" alt="Gallery" class="gallery-image"></li>
+                        <li class="gallery-item"><img src="gallery-2.jpg" alt="Gallery" class="gallery-image"></li>
+                        <li class="gallery-item"><img src="gallery-3.jpg" alt="Gallery" class="gallery-image"></li>
+                        <li class="gallery-item"><img src="gallery-4.jpg" alt="Gallery" class="gallery-image"></li>
+                        <li class="gallery-item"><img src="gallery-5.jpg" alt="Gallery" class="gallery-image"></li>
+                        <li class="gallery-item"><img src="gallery-6.jpg" alt="Gallery" class="gallery-image"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- ===================== CONTACT SECTION ===================== -->
+            <section class="contact-section" id="contact">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="section-content">
+                    <ul class="contact-info-list">
+                        <li class="contact-info">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <p>123 Antipolo City, Philippines</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>brewnbite.ph@gmail.com</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>09123456789</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p>Sunday - CLOSED</p>
+                        </li>
+                        <li class="contact-info">
+                            <i class="fa-solid fa-globe"></i>
+                            <p>www.brewnbite.com</p>
+                        </li>
+                    </ul>
+                    <form action="#" class="contact-form">
+                        <input type="text" placeholder="Your name" class="form-input" required>
+                        <input type="email" placeholder="Your email" class="form-input" required>
+                        <textarea placeholder="Your message" class="form-input" required></textarea>
+                        <button class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- ===================== FOOTER ===================== -->
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright-text">@ 2025 Coffee Shop</p>
+                    <div class="social-link-list">
+                        <a href="https://www.facebook.com/profile.php?id=61578113486931" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/brew_n__bite/?igsh=MWxhbGo2c293bW1rbg%3D%3D#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@brew.n.bites0?_t=ZS-8yK0lAwjNzx&_r=1" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <p class="policy-text">
+                        <a href="#" class="policy-link">Privacy policy</a>
+                        <span class="separator">•</span>
+                        <a href="#" class="policy-link">Refund policy</a>
+                    </p>
+                </div>
+            </footer>
+
+        </main>
+
+        <!-- ===================== CART OVERLAY ===================== -->
+        <div class="cart-overlay" id="cart-overlay"></div>
+
+        <!-- ===================== CART SIDEBAR ===================== -->
+        <aside class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+                <button class="cart-close-btn" id="cart-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-body" id="cart-body">
+                <div class="cart-empty-msg" id="cart-empty-msg">
+                    <i class="fas fa-mug-hot"></i>
+                    <p>Your cart is empty.<br>Add some drinks!</p>
+                </div>
+                <div id="cart-items-container"></div>
+            </div>
+            <div class="cart-footer" id="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cart-total-price">&#8369;0</span>
+                </div>
+                <button class="checkout-btn" id="open-checkout-btn">
+                    <i class="fas fa-credit-card"></i> Proceed to Checkout
+                </button>
+            </div>
+        </aside>
+
+        <!-- ===================== CHECKOUT MODAL ===================== -->
+        <div class="checkout-modal-overlay" id="checkout-modal-overlay">
+            <div class="checkout-modal">
+
+                <div class="modal-header">
+                    <h3 id="modal-title"><i class="fas fa-receipt"></i> Checkout</h3>
+                    <button class="modal-close-btn" id="modal-close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Step Indicators -->
+                <div class="checkout-steps" id="checkout-steps">
+                    <div class="step-indicator active" id="step-ind-1">
+                        <div class="step-circle">1</div>
+                        <span class="step-label">Delivery</span>
+                    </div>
+                    <div class="step-indicator" id="step-ind-2">
+                        <div class="step-circle">2</div>
+                        <span class="step-label">Payment</span>
+                    </div>
+                    <div class="step-indicator" id="step-ind-3">
+                        <div class="step-circle">3</div>
+                        <span class="step-label">Review</span>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+
+                    <!-- STEP 1: Delivery Details -->
+                    <div class="step-panel active" id="step-panel-1">
+                        <h4 class="step-title">
+                            <i class="fas fa-map-marker-alt"></i> Delivery Details
+                        </h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name *</label>
+                                <input type="text" id="fname" placeholder="Juan">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name *</label>
+                                <input type="text" id="lname" placeholder="Dela Cruz">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="09XX XXX XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label>Street Address *</label>
+                            <input type="text" id="street" placeholder="House No., Street, Barangay">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>City / Municipality *</label>
+                                <input type="text" id="city" placeholder="Antipolo City">
+                            </div>
+                            <div class="form-group">
+                                <label>Province *</label>
+                                <input type="text" id="province" placeholder="Rizal">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Delivery Notes (optional)</label>
+                            <textarea id="notes" placeholder="e.g. Leave at the door, call upon arrival..."></textarea>
+                        </div>
+                        <div class="modal-nav">
+                            <button class="btn-next" id="step1-next">
+                                Continue to Payment <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: Payment -->
+                    <div class="step-panel" id="step-panel-2">
+                        <h4 class="step-title">
+                            <i class="fas fa-wallet"></i> Payment Method
+                        </h4>
+                        <div class="payment-methods">
+
+                            <label class="payment-option" id="opt-gcash">
+                                <input type="radio" name="payment" value="gcash">
+                                <div class="payment-icon gcash">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="payment-label">
+                                    <strong>GCash</strong>
+                                    <span>Pay via GCash e-wallet</span>
+                                </div>
+                                <i class="fas fa-check-circle payment-check"></i>
+                            </label>
+
+                            <label class="payment-option" id="opt-bank">
+                                <input type="radio" name="payment" value="bank">
+                                <div class="payment-icon bank">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="payment-label">
+                                    <strong>Bank Transfer</strong>
+                                    <span>BPI / BDO / UnionBank</span>
+                                </div>
+                                <i class="fas fa-check-circle payment-check"></i>
+                            </label>
+
+                            <label class="payment-option" id="opt-cod">
+                                <input type="radio" name="payment" value="cod">
+                                <div class="payment-icon cod">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <div class="payment-label">
+                                    <strong>Cash on Delivery</strong>
+                                    <span>Pay when your order arrives</span>
+                                </div>
+                                <i class="fas fa-check-circle payment-check"></i>
+                            </label>
+
+                        </div>
+
+                        <!-- GCash Details -->
+                        <div class="payment-details-box" id="gcash-details">
+                            <p><strong>GCash Number:</strong> 0912 345 6789</p>
+                            <p><strong>Account Name:</strong> Brew 'n Bite PH</p>
+                            <p class="details-note">Send your payment and screenshot the receipt. You will need your reference number below.</p>
+                            <div class="form-group">
+                                <label>GCash Reference Number *</label>
+                                <input type="text" id="gcash-ref" placeholder="e.g. 1234567890">
+                            </div>
+                        </div>
+
+                        <!-- Bank Details -->
+                        <div class="payment-details-box" id="bank-details">
+                            <p><strong>Bank:</strong> BPI</p>
+                            <p><strong>Account Number:</strong> 1234-5678-90</p>
+                            <p><strong>Account Name:</strong> Brew 'n Bite PH</p>
+                            <p class="details-note">Transfer the exact amount and save your transaction reference number.</p>
+                            <div class="form-group">
+                                <label>Bank Reference Number *</label>
+                                <input type="text" id="bank-ref" placeholder="e.g. TRN123456789">
+                            </div>
+                        </div>
+
+                        <!-- COD Details -->
+                        <div class="payment-details-box" id="cod-details">
+                            <p><i class="fas fa-info-circle"></i> Please prepare the <strong>exact amount</strong> upon delivery.</p>
+                            <p class="details-note">Our rider will collect payment when your order arrives at your address.</p>
+                        </div>
+
+                        <div class="modal-nav">
+                            <button class="btn-back" id="step2-back">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button class="btn-next" id="step2-next">
+                                Review Order <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: Order Review -->
+                    <div class="step-panel" id="step-panel-3">
+                        <h4 class="step-title">
+                            <i class="fas fa-clipboard-list"></i> Order Review
+                        </h4>
+                        <div class="order-summary-list" id="review-items"></div>
+                        <div class="review-info-box">
+                            <p><strong>Delivery to:</strong></p>
+                            <p id="review-address" class="review-info-text"></p>
+                            <p class="review-payment-row">
+                                <strong>Payment:</strong>
+                                <span id="review-payment"></span>
+                            </p>
+                        </div>
+                        <div class="modal-nav">
+                            <button class="btn-back" id="step3-back">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button class="btn-next" id="place-order-btn">
+                                <i class="fas fa-check-circle"></i> Place Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- THANK YOU SCREEN -->
+                    <div class="step-panel" id="step-panel-thanks">
+                        <div class="thankyou-screen">
+                            <div class="thankyou-icon">
+                                <i class="fas fa-mug-hot"></i>
+                            </div>
+                            <h2 class="thankyou-title">Thank You!</h2>
+                            <p class="thankyou-message">
+                                Your order has been placed successfully.<br>
+                                We're brewing it up with love! &#9749;
+                            </p>
+                            <div class="order-number-badge" id="order-number-badge">Order #000000</div>
+                            <p class="thankyou-contact">
+                                We'll contact you at <strong id="confirm-phone"></strong> once your order is on its way.
+                            </p>
+                            <button class="btn-close-thankyou" id="close-thankyou-btn">
+                                Back to Menu
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="toast"></div>
+
+        <!--Linking Swiper Script-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!--Linking custom Script-->
+        <script src="script.js"></script>
+
+    </body>
+</html>
